@@ -1,0 +1,36 @@
+ion-platform-search-container{
+	border-radius: 8px;
+	width: 800px;
+	height: 54px;
+	background-color: var(--color-foreground);
+	padding: 0 16px;
+	box-shadow: #0004 0 0 4px 2px;
+}
+
+.ion-platform-search-input{
+	background-color: transparent;
+	height: 100%;
+	display: flex;
+	flex: 1;
+	color: var(--color-foreground-text-input);
+	border: 0;
+	outline: 0;
+	padding: 0;
+	width: 100%;
+	font-size: 16px;
+}
+
+.ion-platform-search-input::placeholder{
+	color: var(--color-foreground-text-placeholder);
+}
+
+ion-platform-results-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+ion-platform-results-container ion-track-container{
+	margin-right: 16px;
+}

@@ -1,0 +1,111 @@
+ion-column-platform-button{
+	width: 48px;
+	height: 48px;
+	position: relative;
+	cursor: pointer;
+	box-shadow: #0004 0 0 10px 0;
+	border-radius: 50%;
+	pointer-events: all;
+}
+
+ion-column-platform-button ion-icon{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+}
+
+ion-column-platform-button ion-select-indicator{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: scale(0.98);
+	background-color: var(--color-platform-select);
+	border-radius: 50%;
+	transition: transform 0.15s ease;
+}
+
+ion-column-platform-button.selected ion-select-indicator{
+	transform: scale(1.15);
+}
+
+ion-column-platform-button.youtube ion-icon{
+	background-color: #e62a41;
+}
+
+ion-column-platform-button.youtube ion-icon svg path.highlight{
+	d: path('M376.73,241.75,468.48,303l12.86-6.68Z');
+	fill: #fff;
+	opacity: 0.12;
+}
+
+ion-column-platform-button.youtube ion-icon svg path.play{
+	d: path('M576.27,235.89c-3.66-24.14-14.49-41.84-42.79-43.3-43-3.1-106.85-3.09-107.1-3.09,0,0-64.17,0-107,3.09-28.44,1.47-39.16,19.34-42.78,43.3a462,462,0,0,0-3.06,49.48v23.2a462,462,0,0,0,3.06,49.48c4.65,28,15.19,40.94,45.86,43.42,24.46,2.34,104,3.07,104,3.07s64.24-.1,107-3.19c28.53-1.53,39.11-19.27,42.8-43.3a465,465,0,0,0,3-49.48v-23.2A465,465,0,0,0,576.27,235.89ZM394.89,336.68l0-85.9,82.61,43.09Z');
+	fill: #fff;
+}
+
+ion-column-platform-button.spotify ion-icon{
+	background-color: #2ebd59;
+}
+
+ion-column-platform-button.spotify ion-icon svg path.symbol{
+	d: path('M364,355.2c-4.1,6.7-12.9,8.8-19.6,4.7c-53.7-32.8-121.2-40.2-200.7-22c-7.7,1.8-15.3-3-17.1-10.7 c-1.8-7.7,3-15.3,10.7-17.1c87.1-19.9,161.7-11.3,222,25.5C366,339.7,368.1,348.5,364,355.2 M392,293c-5.2,8.4-16.1,11-24.5,5.9 c-61.4-37.8-155.1-48.7-227.7-26.6c-9.4,2.9-19.4-2.5-22.2-11.9c-2.8-9.4,2.5-19.4,11.9-22.2c83-25.2,186.2-13,256.7,30.4 C394.5,273.6,397.2,284.6,392,293 M394.4,228.2c-73.7-43.7-195.2-47.8-265.5-26.4c-11.3,3.4-23.2-3-26.7-14.2 c-3.4-11.3,2.9-23.2,14.2-26.7c80.7-24.5,214.9-19.8,299.7,30.6c10.2,6,13.5,19.1,7.5,29.3C417.7,230.9,404.5,234.2,394.4,228.2');
+	fill: #fff;
+}
+
+ion-column-platform-button.soundcloud ion-icon{
+	background-color: #e17842;
+}
+
+ion-column-platform-button.soundcloud ion-icon svg path.symbol{
+	d: path('M215.86,191.82a8.06,8.06,0,0,0-7.71,8.17V327.88a7.94,7.94,0,1,0,15.87,0V200a8.13,8.13,0,0,0-8.16-8.17Zm64.4-40.35c-5.44,3.17-8.17,7.26-8.17,12.69V327.88a8,8,0,0,0,7.72,8.15h104.3a48.07,48.07,0,1,0,0-96.13l-4.08.45c21.4-60.74-42.29-118.11-99.77-88.88ZM248.06,176a8.12,8.12,0,0,0-8.16,8.15V327.88a8.17,8.17,0,0,0,16.33,0V184.11a8.12,8.12,0,0,0-8.17-8.15ZM119.72,224a8,8,0,0,0-7.71,8.17v95.69a8,8,0,0,0,7.71,8.15,8.13,8.13,0,0,0,8.17-8.15V232.19a8.14,8.14,0,0,0-8.17-8.17Zm32.2-32.2a8.13,8.13,0,0,0-8.16,8.17V327.88a8.16,8.16,0,0,0,16.32,0V200a8.13,8.13,0,0,0-8.16-8.17ZM88,320.16A8.12,8.12,0,0,0,96.14,312V248.06a8.17,8.17,0,0,0-16.33,0V312A8.12,8.12,0,0,0,88,320.16ZM184.12,176a8.12,8.12,0,0,0-8.16,8.15V327.88a8.12,8.12,0,0,0,8.16,8.15,8,8,0,0,0,7.7-8.15V184.11a8,8,0,0,0-7.7-8.15Z');
+	fill: #fff;
+}
+
+ion-column-nav-button{
+	width: 48px;
+	height: 48px;
+	position: relative;
+	cursor: pointer;
+	border-radius: 50%;
+	pointer-events: all;
+}
+
+ion-column-nav-button ion-icon{
+	width: 100%;
+	height: 100%;
+}
+
+ion-column-nav-button ion-icon svg{
+	fill: var(--color-navbutton);
+	transition: fill 0.2s linear;
+}
+
+ion-column-nav-button.selected ion-icon svg{
+	fill: var(--color-navbutton-select);
+}
+
+ion-column-nav-button.home ion-icon svg path.body{
+	d: path('M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z');
+}
+
+ion-column-nav-button.home ion-icon svg path.roof{
+	d: path('M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z');
+}
+
+ion-column-nav-button.heart ion-icon svg path.heart{
+	d: path('M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z');
+}
+
+ion-column-nav-button.settings ion-icon svg path.gear{
+	d: path('M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z');
+}
+
+ion-column-platform-button a, ion-column-nav-button a{
+	width: 100%;
+	height: 100%;
+}

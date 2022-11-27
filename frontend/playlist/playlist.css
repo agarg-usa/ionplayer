@@ -1,0 +1,244 @@
+.position-relative
+{
+	position: relative;
+}
+
+.playlist-img-container
+{
+	/*
+	width: 245px;
+	height: 245px;
+	padding: 5px 5px 5px 5px;
+	border: 1px solid white;
+	looks better without padding / border tbh plus this overflows container
+	*/
+	width: 250px;
+	height: 250px;
+	box-shadow: rgb(0, 0, 0, 0.5) 0px 0px 14px -4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.playlist-img-container img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.playlist-img-container svg{
+	fill: #fff;
+	width: 50%;
+	height: 50%;
+}
+
+.playlist-img-container svg path{
+	d: path('M25.6 11.565v45.38c-2.643-3.27-6.68-5.37-11.2-5.37-7.94 0-14.4 6.46-14.4 14.4s6.46 14.4 14.4 14.4 14.4-6.46 14.4-14.4v-51.82l48-10.205V47.2c-2.642-3.27-6.678-5.37-11.2-5.37-7.94 0-14.4 6.46-14.4 14.4s6.46 14.4 14.4 14.4S80 64.17 80 56.23V0L25.6 11.565zm-11.2 65.61c-6.176 0-11.2-5.025-11.2-11.2 0-6.177 5.024-11.2 11.2-11.2 6.176 0 11.2 5.023 11.2 11.2 0 6.174-5.026 11.2-11.2 11.2zm51.2-9.745c-6.176 0-11.2-5.024-11.2-11.2 0-6.174 5.024-11.2 11.2-11.2 6.176 0 11.2 5.026 11.2 11.2 0 6.178-5.026 11.2-11.2 11.2z');
+}
+
+.playlist-title-and-img-container
+{
+	display: flex;
+	flex-direction: row;
+	height: 250px;
+	/* margin-bottom: 20px; */
+}
+
+
+.playlist-page ion-text
+{
+	position: relative;
+	height: 1.5em;
+	white-space: nowrap;
+	min-width: 200px;
+}
+
+.playlist-title-text
+{
+	color: white;
+	font-family: "Poppins";
+	font-weight: bold;
+	font-size: 65px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.playlist-description-text
+{
+	color:#7e8299;
+	font-size: 20px;
+	white-space: normal !important;
+	max-width: 1000px;
+	overflow-wrap: break-word;
+}
+
+.playlist-metadata-text
+{
+	color: white;
+	font-size: 18px;
+}
+
+.playlist-title-container
+{
+	display: flex;
+	flex-direction: column-reverse;
+	margin-left: 30px;
+}
+
+.playlist-playbutton
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 65px;
+	width: 65px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.playlist-playingbutton{
+	d: path("M 21.57 12 5.98 3 5.98 21 21.57 12 z");
+	fill: white;
+}
+
+.playlist-playbutton-background
+{
+	background-color: #fff1;
+	height: 60px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: transform 0.1s;
+}
+
+.playlist-playbutton-background:hover
+{
+	transform: scale(1.1);
+}
+
+.playlist-playbutton-background:active:hover
+{
+	transform: scale(1);
+}
+
+
+.playlist-track-container
+{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	background-color: rgba(45, 50, 60, 0.5) ;
+	border-radius: 10px;
+	color: white;
+	height: 80px;
+	margin-top: 15px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 14px 14px;
+	min-width: 1000px;
+}
+
+.playlist-track-container:hover
+{
+	background-color: rgba(75,75,75,0.7);
+	cursor: pointer;
+}
+
+.playlist-track-container:active:hover
+{
+	background-color: rgba(50,50,50,0.6);
+}
+
+
+.playlist-track-container img
+{
+	height: 65px;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 14px 4px;
+}
+
+.playlist-track-text-centered{
+	font-size: 21px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.playlist-track-text
+{
+	font-size: 21px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.playlist-track-title-container
+{
+	display: flex;
+	flex-direction: column-reverse;
+	margin-left: 30px;
+	justify-content: center;
+}
+
+.playlist-track-author
+{
+	font-size: 16px !important;
+	color: gray;
+	max-width: 450px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.playlist-vertical-container
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 80px;
+}
+
+.playlist-link:hover
+{
+	text-decoration : underline;
+	cursor : pointer;
+}
+
+.playlist-spinner-container
+{
+	margin: auto;
+	width: 0px;
+	padding-top: 18px;
+}
+
+.playlist-spinner{
+	border: 8px solid #f3f3f3;
+	border-radius: 100%;
+	border-top: 8px solid #fff1;
+	width: 50px;
+	height: 50px;
+	animation: playlist-spin 2s linear infinite;
+	display: inline-block;
+}
+
+.playlist-spinner-mini{
+	border: 4px solid #f3f3f3;
+	border-radius: 100%;
+	border-top: 4px solid #fff1;
+	width: 25px;
+	height: 25px;
+	animation: playlist-spin 2s linear infinite;
+	display: inline-block;
+}
+
+@keyframes playlist-spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+/*
+ion-text .playlist-title-container
+{
+	display: block;
+}
+*/

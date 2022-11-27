@@ -1,0 +1,168 @@
+ion-playlist-list-container
+{
+	overflow: scroll;
+	padding-top: 10px;
+	display: flex;
+	margin-bottom: 5%;
+	margin-top: 4px;
+
+}
+
+.playlist-title
+{
+	color: white;
+	font-weight: bold;
+	font-size: large;
+	display: inline-block;
+	font-family: 'Product Sans', sans-serif;
+}
+
+ion-playlist-container img
+{
+	display: block;
+	width: 175px;
+	height: 175px;
+}
+
+ion-playlist-container svg{
+	width: 88px;
+	height: 88px;
+	padding: 44px;
+	fill: #fff;
+}
+
+ion-playlist-container svg path{
+	d: path('M25.6 11.565v45.38c-2.643-3.27-6.68-5.37-11.2-5.37-7.94 0-14.4 6.46-14.4 14.4s6.46 14.4 14.4 14.4 14.4-6.46 14.4-14.4v-51.82l48-10.205V47.2c-2.642-3.27-6.678-5.37-11.2-5.37-7.94 0-14.4 6.46-14.4 14.4s6.46 14.4 14.4 14.4S80 64.17 80 56.23V0L25.6 11.565zm-11.2 65.61c-6.176 0-11.2-5.025-11.2-11.2 0-6.177 5.024-11.2 11.2-11.2 6.176 0 11.2 5.023 11.2 11.2 0 6.174-5.026 11.2-11.2 11.2zm51.2-9.745c-6.176 0-11.2-5.024-11.2-11.2 0-6.174 5.024-11.2 11.2-11.2 6.176 0 11.2 5.026 11.2 11.2 0 6.178-5.026 11.2-11.2 11.2z');
+}
+
+ion-playlist-container
+{
+	padding: 20px;
+	margin-right: 10px;
+	border-radius: 10px;
+	background-color: #191928;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+ion-playlist-list-container ion-text
+{
+	color: white;
+	display: block;
+	font-family: 'Product Sans', sans-serif;
+	margin-bottom: 5%;
+}
+
+ion-playlist-list-container
+{
+	padding-top: 10px;
+	display: flex;
+	margin-bottom: 5%;
+	margin-top: 4px;
+	flex-flow: row wrap;
+	height: 255px;
+	transition: height 1s;
+
+}
+
+ion-playlist-container img
+{
+	display: block;
+	width: 175px;
+	height: 175px;
+}
+
+ion-playlist-container
+{
+	padding: 20px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	background-color: #191928;
+}
+
+.see-all
+{
+	display: block;
+	padding: 1px 5px;
+	border: 1px solid white;
+	color: white;
+	font-family: 'Product Sans', sans-serif;
+	border-radius: 5px;
+}
+
+.see-all:hover
+{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+
+ion-user-container ion-profile-info-container
+{
+	margin: auto;
+	display: block;
+}
+
+ion-profile-picture-container{
+	height: 256px;
+	width: 256px;
+	margin : auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #223;
+}
+
+ion-profile-picture-container svg{
+	width: 50%;
+	height: 50%;
+	fill: #fff;
+}
+
+ion-profile-picture-container img{
+	width: 100%;
+	height: 100%;
+}
+
+ion-profile-picture-container svg path{
+	d: path('M15.216 13.717L12 11.869C11.823 11.768 11.772 11.607 11.757 11.521C11.742 11.435 11.737 11.267 11.869 11.111L13.18 9.57401C14.031 8.58001 14.5 7.31101 14.5 6.00001V5.50001C14.5 3.98501 13.866 2.52301 12.761 1.48601C11.64 0.435011 10.173 -0.0879888 8.636 0.0110112C5.756 0.198011 3.501 2.68401 3.501 5.67101V6.00001C3.501 7.31101 3.97 8.58001 4.82 9.57401L6.131 11.111C6.264 11.266 6.258 11.434 6.243 11.521C6.228 11.607 6.177 11.768 5.999 11.869L2.786 13.716C1.067 14.692 0 16.526 0 18.501V20H1V18.501C1 16.885 1.874 15.385 3.283 14.584L6.498 12.736C6.886 12.513 7.152 12.132 7.228 11.691C7.304 11.251 7.182 10.802 6.891 10.462L5.579 8.92501C4.883 8.11101 4.499 7.07201 4.499 6.00001V5.67101C4.499 3.21001 6.344 1.16201 8.699 1.00901C9.961 0.928011 11.159 1.35601 12.076 2.21501C12.994 3.07601 13.5 4.24301 13.5 5.50001V6.00001C13.5 7.07201 13.117 8.11101 12.42 8.92501L11.109 10.462C10.819 10.803 10.696 11.251 10.772 11.691C10.849 12.132 11.115 12.513 11.503 12.736L14.721 14.585C16.127 15.384 17.001 16.884 17.001 18.501V20H18.001V18.501C18 16.526 16.932 14.692 15.216 13.717Z');
+}
+
+ion-profile-info-container ion-desc-container
+{
+	background-color: #191928;
+	display: block;
+	width: 50%;
+	max-width: 650px;
+	margin: auto;
+	position: relative;
+	top: -100px;
+	z-index: -1;
+	overflow-wrap: break-word;
+	padding: 100px 20px 50px;
+}
+
+ion-desc-container ion-username-text
+{
+	color: white;
+	font-family: 'Product Sans', sans-serif;
+	font-size: 300%;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+ion-desc-container ion-desc-text
+{
+	color: white;
+	font-family: 'Product Sans', sans-serif;
+	font-size: 150%;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	font-style: italic;
+}
